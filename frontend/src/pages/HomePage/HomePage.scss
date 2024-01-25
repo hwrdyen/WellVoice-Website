@@ -1,0 +1,103 @@
+@use "../../styles/global" as *;
+@use "../../styles/mixins" as *;
+@use "../../styles/typography" as *;
+@use "../../styles/variable" as *;
+
+.HomePage {
+  &__Container {
+    @include mobile {
+      margin: $mobile-side-margin $mobile-side-margin;
+    }
+    @include tablet {
+      margin: $mobile-side-margin $tablet-side-margin;
+    }
+    @include desktop {
+      margin: $tablet-side-margin $desktop-side-margin;
+    }
+  }
+
+  &__TitleContainer {
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    @include tablet {
+    }
+    @include desktop {
+      flex-direction: row;
+      gap: 1%;
+    }
+  }
+
+  &__TitleContent {
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    @include tablet {
+    }
+    @include desktop {
+      width: 54%;
+    }
+
+    &--description {
+      @include mobile {
+        color: $wellvoice-slate;
+      }
+      @include tablet {
+      }
+      @include desktop {
+        max-width: 540px;
+        font-size: 20px;
+      }
+    }
+  }
+
+  &__TitleButton {
+    &--container {
+      @include mobile {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+      }
+      @include tablet {
+      }
+      @include desktop {
+        justify-content: flex-start;
+      }
+    }
+
+    &--button {
+      @include mobile {
+        border: 1px solid grey;
+        border-radius: 20px;
+        background-color: transparent;
+        width: 158px;
+        padding: 8px 16px;
+        font-family: "Poppins-SemiBold";
+      }
+      @include tablet {
+      }
+      @include desktop {
+      }
+    }
+  }
+
+  &__TitleImg {
+    @include mobile {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 20px;
+    }
+    @include tablet {
+    }
+    @include desktop {
+      width: 45%;
+    }
+  }
+}

@@ -1,0 +1,49 @@
+@use "../../styles/global" as *;
+@use "../../styles/mixins" as *;
+@use "../../styles/typography" as *;
+@use "../../styles/variable" as *;
+
+.NavBar {
+  &__Container {
+    @include mobile {
+      margin: $mobile-side-margin $mobile-side-margin;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    @include tablet {
+      margin: $mobile-side-margin $tablet-side-margin;
+    }
+    @include desktop {
+      margin: $tablet-side-margin $desktop-side-margin;
+      flex-direction: row;
+    }
+  }
+
+  &__Logo {
+    @include mobile {
+      width: 200px;
+      height: auto;
+    }
+    @include tablet {
+    }
+    @include desktop {
+    }
+  }
+
+  &__ServiceList {
+    @include mobile {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      font-family: "Poppins-SemiBold";
+    }
+    @include tablet {
+    }
+    @include desktop {
+      margin-left: auto;
+    }
+  }
+}

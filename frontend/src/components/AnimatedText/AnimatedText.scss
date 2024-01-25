@@ -1,0 +1,39 @@
+@use "../../styles/global" as *;
+@use "../../styles/mixins" as *;
+@use "../../styles/typography" as *;
+@use "../../styles/variable" as *;
+
+.fade-in {
+  transition: opacity 1.5s ease;
+  color: $wellvoice-green;
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 1.5s ease;
+  color: $wellvoice-green;
+}
+
+.AnimatedText {
+  &__Container {
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+    }
+    @include tablet {
+    }
+    @include desktop {
+    }
+  }
+
+  &__Title {
+    @include mobile {
+      font-size: 30px;
+    }
+    @include tablet {
+    }
+    @include desktop {
+      font-size: 70px;
+    }
+  }
+}
