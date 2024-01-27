@@ -6,18 +6,25 @@
 .Footer {
   &__Container {
     @include mobile {
+      padding: $mobile-side-margin;
       background-color: #4d4d4d;
       color: white;
       margin-top: 10px;
-      padding: 2rem;
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
+      gap: 10px;
     }
     @include tablet {
+      padding: $mobile-side-margin $tablet-side-margin;
     }
     @include desktop {
+      padding: $tablet-side-margin $desktop-side-margin;
+      gap: 20px;
+      justify-content: space-between;
+
+      min-height: 170px;
     }
   }
 
@@ -29,6 +36,73 @@
     @include tablet {
     }
     @include desktop {
+    }
+  }
+
+  &__TitleContainer {
+    @include mobile {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      font-family: "Poppins-SemiBold";
+    }
+    @include tablet {
+      font-size: 1.0625rem;
+    }
+    @include desktop {
+      flex-direction: row;
+      justify-content: space-around;
+      font-size: 1.125rem;
+    }
+  }
+
+  &__Info {
+    @include mobile {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+    }
+    @include tablet {
+    }
+    @include desktop {
+      flex-direction: row;
+    }
+
+    &--right {
+      @include desktop {
+        margin-right: auto;
+      }
+    }
+
+    &--sociallist {
+      @include mobile {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+      }
+      @include tablet {
+      }
+      @include desktop {
+        gap: 15px;
+      }
+    }
+
+    &--socialitem:hover {
+      @include mobile {
+      }
+      @include tablet {
+      }
+      @include desktop {
+        transform: scale(1.3);
+      }
     }
   }
 }
