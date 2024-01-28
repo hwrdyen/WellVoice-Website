@@ -28,6 +28,16 @@ const HomePage = () => {
           alt="HomePage Title"
         />
       </div>
+
+      <div className="HomePage__AdContainer">
+        <div className="HomePage__AdTitle">Why WellVoice ?</div>
+        <div className="HomePage__AdList">
+          <div className="HomePage__AdItem">So much more than admin</div>
+          <div className="HomePage__AdItem">Grow beyond 1:1</div>
+          <div className="HomePage__AdItem">Elevate your client experience</div>
+          <div className="HomePage__AdItem">Be part of a movement</div>
+        </div>
+      </div>
     </div>
   );
 };

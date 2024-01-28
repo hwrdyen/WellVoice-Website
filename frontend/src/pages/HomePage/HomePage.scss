@@ -100,4 +100,40 @@
       width: 45%;
     }
   }
+
+  &__AdContainer {
+    @include mobile {
+      margin: $mobile-side-margin;
+    }
+    @include tablet {
+    }
+    @include desktop {
+    }
+  }
+
+  &__AdList {
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+    }
+    @include tablet {
+    }
+    @include desktop {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__AdItem {
+    @include mobile {
+    }
+    @include tablet {
+    }
+    @include desktop {
+      width: 45%;
+    }
+  }
 }
