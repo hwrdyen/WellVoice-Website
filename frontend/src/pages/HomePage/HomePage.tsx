@@ -36,21 +36,33 @@ const HomePage = () => {
             <div className="HomePage__AdItem--title">
               So much more than admin
             </div>
-            <div className="HomePage__AdItem--description"></div>
+            <div className="HomePage__AdItem--description">
+              Automate admin tasks while delivering an experience that clients
+              will love.
+            </div>
           </div>
           <div className="HomePage__AdItem">
             <div className="HomePage__AdItem--title">Grow beyond 1:1</div>
-            <div className="HomePage__AdItem--description"></div>
+            <div className="HomePage__AdItem--description">
+              Automate admin tasks while delivering an experience that clients
+              will love.
+            </div>
           </div>
           <div className="HomePage__AdItem">
             <div className="HomePage__AdItem--title">
               Elevate your client experience
             </div>
-            <div className="HomePage__AdItem--description"></div>
+            <div className="HomePage__AdItem--description">
+              Unique tools offer the unrivaled ability to support client success
+              and accountability.
+            </div>
           </div>
           <div className="HomePage__AdItem">
             <div className="HomePage__AdItem--title">Be part of a movement</div>
-            <div className="HomePage__AdItem--description"></div>
+            <div className="HomePage__AdItem--description">
+              Join a group of professionals who share your passion for driving
+              better health outcomes.
+            </div>
           </div>
         </div>
       </div>
