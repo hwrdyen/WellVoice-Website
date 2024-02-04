@@ -2,6 +2,9 @@ import "./HomePage.scss";
 import AnimatedText from "../../components/AnimatedText/AnimatedText";
 import homePageTitleImg from "../../assets/images/homepage-title-img.png";
 
+import { featureDetail } from "../../config/homePage-config";
+import FeatureCard from "../../components/FeatureCard/FeatureCard";
+
 const HomePage = () => {
   return (
     <div className="HomePage__Container">
@@ -32,7 +35,13 @@ const HomePage = () => {
       <div className="HomePage__AdContainer">
         <div className="HomePage__AdTitle">Why WellVoice ?</div>
         <div className="HomePage__AdList">
-          <div className="HomePage__AdItem">
+          {featureDetail.map((feature) => (
+            <FeatureCard
+              featureTitle={`${feature?.title}`}
+              featureDescription={`${feature?.description}`}
+            />
+          ))}
+          {/* <div className="HomePage__AdItem">
             <div className="HomePage__AdItem--title">
               So much more than admin
             </div>
@@ -63,7 +72,7 @@ const HomePage = () => {
               Join a group of professionals who share your passion for driving
               better health outcomes.
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

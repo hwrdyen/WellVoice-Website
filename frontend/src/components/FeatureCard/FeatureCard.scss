@@ -1,0 +1,16 @@
+@use "../../styles/global" as *;
+@use "../../styles/mixins" as *;
+@use "../../styles/typography" as *;
+@use "../../styles/variable" as *;
+
+.FeatureCard {
+  &__AdItem {
+    @include mobile {
+    }
+    @include tablet {
+    }
+    @include desktop {
+      width: 45%;
+    }
+  }
+}

@@ -126,14 +126,4 @@
       flex-wrap: wrap;
     }
   }
-
-  &__AdItem {
-    @include mobile {
-    }
-    @include tablet {
-    }
-    @include desktop {
-      width: 45%;
-    }
-  }
 }
